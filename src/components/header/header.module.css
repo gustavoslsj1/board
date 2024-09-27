@@ -39,3 +39,17 @@
 .tarefas{
     font-family: 40px;
 }
+.painel{
+    background-color: #fff;
+    color: black;
+    border-radius: 20px;
+    padding: 5px;
+    transition: all 0.4s;
+}
+
+.painel:hover{
+    transform: scale(1.08);
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: black;
+}
