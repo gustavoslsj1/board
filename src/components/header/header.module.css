@@ -1,0 +1,41 @@
+
+.header{
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    color: #fff;
+    border-radius: 25px;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.span{
+    color: red;
+    margin-right: 3px;
+}
+
+.button:hover{
+    color: black;
+    background-color: #fff;
+    transform: scale(1.08);
+}
+.tarefas{
+    font-family: 40px;
+}
