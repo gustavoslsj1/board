@@ -1,0 +1,31 @@
+.container{
+    display: grid;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+.section{
+    width: 1024px;
+}
+.legenda{
+    color: #fff;
+}
+.button{
+    color: #fff;
+    width: 100%;
+    border-radius: 15px;
+    background-color: rgb(52, 49, 231);
+    height: 40px;
+    cursor: pointer;
+}
+.checkbox{
+    margin: 5px;
+}
+.checkboxarea{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.button:hover{
+    opacity: 60%;
+}

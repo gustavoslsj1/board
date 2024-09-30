@@ -1,7 +1,7 @@
-export default function TextBoard(){
+import { HTMLProps } from "react"
+import styles from "./textboard.module.css"
+export default function TextBoard({...rest}:HTMLProps<HTMLTextAreaElement>){
     return(
-        <div>
-            
-        </div>
+        <textarea className={styles.textarea} {...rest}></textarea>
     )
 }

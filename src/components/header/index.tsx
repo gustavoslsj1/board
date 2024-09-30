@@ -12,7 +12,9 @@ export default function Header(){
                     <h1 className={styles.tarefas}>tarefas <span className={styles.span}>+</span></h1>
                     </Link>
                     
-                    <Link href="/dashboard/Dashboard" className={styles.painel}> meu painel</Link>
+                   {session?.user &&(
+                         <Link href="/dashboard/Dashboard" className={styles.painel}> meu painel</Link>
+                   )}
                 </nav>
                 {status === "loading" ?(
                     <></>

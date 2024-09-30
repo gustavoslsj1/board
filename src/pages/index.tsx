@@ -19,8 +19,8 @@ export default function Home(){
         </div>
      
         <div className={styles.caixa}>
-        <p className={styles.caixasFrase}>1 mil</p>
-        <p className={styles.caixasFrase}>7 mil </p>
+        <p className={styles.caixasFrase}> +1 mil posts</p>
+        <p className={styles.caixasFrase}> +7 mil comentarios </p>
       </div>
       </main>
     </div>
