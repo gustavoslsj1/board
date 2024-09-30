@@ -1,12 +1,17 @@
 .container{
-    display: grid;
+    width: 100%;
+}
+.section{
+    display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
-    margin-top: 80px;
 }
-.section{
-    width: 1024px;
+.content{
+    width: 100%;
+    max-width: 1024px;
+    margin-top: 80px;
+    padding:  0 18px;
 }
 .legenda{
     color: #fff;
@@ -28,4 +33,27 @@
 }
 .button:hover{
     opacity: 60%;
+}
+.taskSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.taskArticle{
+    border: 1px solid gray;
+    border-radius: 10px;
+    max-width: 1024px;
+    width: 100%;
+
+}
+.labeltask{
+    background-color: blue;
+    color: #fff;
+    border-radius: 20px;
+    padding: 3px;
+}
+.taskDiv a {
+    text-decoration: none;
 }

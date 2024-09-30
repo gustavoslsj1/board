@@ -1,22 +1,23 @@
 
 .header{
+    width: 100%;
     display: flex;
-    background-color: black;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .content{
-    width: 100%;
-    max-width: 1024px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:center ;
     height: 60px;
+    width: 100%;
+    max-width: 1024px;
+
 }
 .nav{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 .button{

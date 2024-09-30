@@ -17,14 +17,13 @@ export default function Header(){
                    )}
                 </nav>
                 {status === "loading" ?(
-                    <></>
-                ): session?(
-                    <button className={styles.button} onClick={()=> signOut()}>olá {session?.user?.name}</button>
-                ): (
+                        <></>
+                    ): session?(
+                        <button className={styles.button} onClick={()=> signOut()}>olá {session?.user?.name}</button>
+                    ):(
                     <button className={styles.button} onClick={()=>signIn("google")}>cadastre-se</button>
-                )}
+                    )}
             </section>
-            oiiiiiiiii
         </header>
     )
 }

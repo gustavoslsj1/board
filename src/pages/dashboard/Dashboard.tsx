@@ -4,6 +4,8 @@ import TextBoard from "@/components/textboard";
 import { GetServerSideProps } from "next";
 
 import { getSession } from "next-auth/react";
+import {FiShare2} from "react-icons/fi"
+import { FaTrash } from "react-icons/fa";
 export default function DashBoard(){
     return(
         <div className={styles.container}>
@@ -27,6 +29,23 @@ export default function DashBoard(){
                             <button className={styles.button}>registrar</button>
                         </form>
                     </div>
+                </section>
+
+                <section className={styles.taskSection}>
+                    <h1>Minhas tarefas  </h1>
+                    
+                    <article className={styles.taskArticle}>
+                        <div className={styles.taskDiv}>
+                            <label className={styles.labeltask}>PUBLICO</label>
+                            <button>
+                                <FiShare2 size={22} color="#3183ff"/>
+                            </button>
+                        </div>
+                        <div>
+                            <p>minha primeira tarefa</p>
+                            <FaTrash size={22} color="red"/>
+                        </div>
+                    </article>
                 </section>
             </main>
         </div>
