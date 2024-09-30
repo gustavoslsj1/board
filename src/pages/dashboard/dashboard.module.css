@@ -11,7 +11,7 @@
 .content{
     width: 100%;
     max-width: 1024px;
-    margin-top: 80px;
+    margin-top: 50px;
     padding:  0 18px;
 }
 .legenda{
@@ -24,6 +24,7 @@
     background-color: rgb(52, 49, 231);
     height: 40px;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 .checkbox{
     margin: 5px;
