@@ -1,5 +1,6 @@
 .container{
     width: 100%;
+    background-color: black;
 }
 .section{
     display: flex;
@@ -35,25 +36,55 @@
     opacity: 60%;
 }
 .taskSection{
+    background-color: #fff;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  
 }
 .taskArticle{
+    display: flex;
+    flex-direction: column;
     border: 1px solid gray;
     border-radius: 10px;
     max-width: 1024px;
     width: 100%;
-
+  padding: 14px;
+  margin-bottom: 14px;
+  line-height: 150%;
 }
 .labeltask{
     background-color: blue;
     color: #fff;
-    border-radius: 20px;
-    padding: 3px;
+    border-radius: 10px;
+    padding: 2px 6px;
+    font-size: 12px;
 }
-.taskDiv a {
+
+.taskSection a{
     text-decoration: none;
+}
+.taskDiv{
+    display: flex;
+}
+
+.taskSection h1{
+    margin: 38px auto 10px auto;
+    color: black;
+}
+.taskcontent{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.taskcontent p {
+    color: black;
+}
+.compartilha{
+    border: 0;
+    background: transparent;
+    margin: 0 8px;
+    cursor: pointer;
 }

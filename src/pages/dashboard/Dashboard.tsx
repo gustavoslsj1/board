@@ -37,11 +37,23 @@ export default function DashBoard(){
                     <article className={styles.taskArticle}>
                         <div className={styles.taskDiv}>
                             <label className={styles.labeltask}>PUBLICO</label>
-                            <button>
+                            <button className={styles.compartilha}>
                                 <FiShare2 size={22} color="#3183ff"/>
                             </button>
+                        </div >
+                        <div className={styles.taskcontent}>
+                            <p>minha primeira tarefa</p>
+                            <FaTrash size={22} color="red"/>
                         </div>
-                        <div>
+                    </article>
+                    <article className={styles.taskArticle}>
+                        <div className={styles.taskDiv}>
+                            <label className={styles.labeltask}>PUBLICO</label>
+                            <button className={styles.compartilha}>
+                                <FiShare2 size={22} color="#3183ff"/>
+                            </button>
+                        </div >
+                        <div className={styles.taskcontent}>
                             <p>minha primeira tarefa</p>
                             <FaTrash size={22} color="red"/>
                         </div>
