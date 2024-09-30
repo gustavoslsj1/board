@@ -22,6 +22,7 @@ export default function Header(){
                     <button className={styles.button} onClick={()=>signIn("google")}>cadastre-se</button>
                 )}
             </section>
+            oiiiiiiiii
         </header>
     )
 }
