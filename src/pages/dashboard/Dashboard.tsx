@@ -9,7 +9,8 @@ import { FaTrash } from "react-icons/fa";
 import { ChangeEvent, FormEvent, useEffect, useState } from "react";
 
 import { db } from "@/services/firebaseconnection";
-import { addDoc, collection, onSnapshot, orderBy, query ,where} from "firebase/firestore";
+import { addDoc, collection, onSnapshot, orderBy, query ,where , doc, deleteDoc} from "firebase/firestore";
+import Link from "next/link";
 
 interface HomeProps{
     user:{
@@ -63,6 +64,17 @@ export default function DashBoard({ user }:HomeProps){
         console.log(event.target.checked)
         setpublicTask(event.target.checked)
     }
+
+    async function handleShare(id:string){
+        await navigator.clipboard.writeText(
+            `${process.env.NEXTSHARE_URL}/task/${id}`
+        )
+        alert('copiado com sucesso')
+    }
+    async function handleDelet(id: string) {
+        let docRef = doc(db,"tarefas", id)
+        await deleteDoc(docRef)
+    }
     async function handlenewtask(event:FormEvent){
         event.preventDefault()
 
@@ -92,7 +104,6 @@ export default function DashBoard({ user }:HomeProps){
             </Head>
 
             <main className={styles.main}>
-                oii
                 <section className={styles.section}>
                     <div className={styles.content}>
                         <h1>qual a sua tarefa ?</h1>
@@ -126,14 +137,23 @@ export default function DashBoard({ user }:HomeProps){
                      {item.public &&(
                         <div className={styles.taskDiv}>
                         <label className={styles.labeltask}>PUBLICO</label>
-                        <button className={styles.compartilha}>
+                        <button className={styles.compartilha} onClick={()=>handleShare(item.id)}>
                             <FiShare2 size={22} color="#3183ff"/>
                         </button>
                     </div >
                      )}
                      <div className={styles.taskcontent}>
-                         <p>{item.tarefas}</p>
+                         {item.public? (
+                            <Link href={`/task/${item.id}`}>
+                            <p>{item.tarefas}</p>
+                            </Link>
+                         ):(
+                            <p>{item.tarefas}</p>
+                         )}
+                         <button className={styles.trash} onClick={()=>handleDelet(item.id)}>
                          <FaTrash size={22} color="red"/>
+                         </button>
+                        
                      </div>
                  </article>
                    ))}

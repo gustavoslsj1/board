@@ -89,3 +89,7 @@
     margin: 0 8px;
     cursor: pointer;
 }
+.trash{
+    border: 0px;
+    background-color: #fff;
+}
