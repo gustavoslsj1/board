@@ -92,6 +92,7 @@ export default function DashBoard({ user }:HomeProps){
             </Head>
 
             <main className={styles.main}>
+                oii
                 <section className={styles.section}>
                     <div className={styles.content}>
                         <h1>qual a sua tarefa ?</h1>
