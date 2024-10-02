@@ -55,6 +55,7 @@
   padding: 14px;
   margin-bottom: 14px;
   line-height: 150%;
+  white-space: pre-wrap;
 }
 .labeltask{
     background-color: blue;
